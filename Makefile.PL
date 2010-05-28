@@ -10,6 +10,7 @@ my %features = (
         Tiny            => { name => 'Template::Tiny', min => '0.02' },
         HtmlTemplate    => { name => 'HTML::Template', min => '0.02' },
 
+        Alloy           => { name => 'Alloy'               },
         Tenjin          => { name => 'Tenjin'              },
         Haml            => { name => 'Text::HAML'          },
         Mason           => { name => 'HTML::Mason'         },
@@ -31,9 +32,12 @@ my %features = (
     },
 
     plugin => {
-        namespace => 'Plugin',
-        Database  => { name => 'Database'          },
-        SiteMap   => { name => 'Site map creation' },
+        namespace  => 'Plugin',
+        Database   => { name => 'Database'                 },
+        SiteMap    => { name => 'Site map creation'        },
+        REST       => { name => 'RESTful apps'             },
+        Email      => { name => 'Email::Stuff integration' },
+        Validation => { name => 'Oogly Data validation'    },
     },
 );
 
