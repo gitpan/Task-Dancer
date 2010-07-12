@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 1;
 
@@ -12,7 +12,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.12
+Version 0.13
 
 =head1 DESCRIPTION
 
@@ -45,6 +45,8 @@ If you've written anything relating to Dancer, please let me know.
 
 =head2 L<Dancer::Logger::LogHandler>
 
+=head2 L<Dancer::Logger::PSGI>
+
 =head2 L<Dancer::Logger::Syslog>
 
 =head1 Session Engines
@@ -52,6 +54,8 @@ If you've written anything relating to Dancer, please let me know.
 =head2 L<Dancer::Session::Cookie>
 
 =head2 L<Dancer::Session::Memcache>
+
+=head2 L<Dancer::Session::PSGI>
 
 =head2 L<Dancer::Session::Storable>
 
@@ -63,9 +67,15 @@ If you've written anything relating to Dancer, please let me know.
 
 =head2 L<Dancer::Plugin::REST>
 
+=head2 L<Dancer::Plugin::Scoped>
+
 =head2 L<Dancer::Plugin::SiteMap>
 
 =head2 L<Dancer::Plugin::Validation>
+
+=head1 More Plack middlewares
+
+=head2 L<Dancer::Debug>
 
 =head1 AUTHOR
 
