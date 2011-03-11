@@ -15,7 +15,7 @@ my %features = (
         Tenjin          => { name => 'Tenjin'              },
         Haml            => { name => 'Text::HAML'          },
         Mason           => { name => 'HTML::Mason'         },
-        # Mason2          => { name => 'HTML::Mason2'        }, => failing 0.01
+        Mason2          => { name => 'HTML::Mason2', min => '0.02' },
         MicroTemplate   => { name => 'Text::MicroTemplate' },
         MojoTemplate    => { name => 'Mojo::Template wrapper for Dancer' },
         Semantic        => { name => 'Semantic Template wrapper for Dancer' },
@@ -27,6 +27,7 @@ my %features = (
         namespace  => 'Logger',
 
         LogHandler => { name => 'Log::Handler'                               },
+        Log4perl   => { name => 'Log4Perl'                                   },
         Pipe       => { name => 'Pipe-based logging engine for Dancer'       },
         PSGI       => { name => 'PSGI'                                       },
         Spinner    => { name => 'Show a spinner in the console log messages' },
@@ -43,7 +44,8 @@ my %features = (
         namespace => 'Session',
 
         Cookie    => { name => 'Encrypted cookie-based'     },
-        # KiokuDB   => { name => 'KiokuDB Dancer session backend' }, => failing 0.03
+        KiokuDB   => { name => 'KiokuDB Dancer session backend',
+                       min => '0.04' },
         Memcached => { name => 'Cache::Memcached'           },
         PSGI      => { name => 'Plack::Middleware::Session' },
         Storable  => { name => 'Storable file-based'        },
