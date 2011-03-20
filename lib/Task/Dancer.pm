@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.24';
+our $VERSION = '0.25';
 
 1;
 
@@ -12,7 +12,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.24
+Version 0.25
 
 =head1 DESCRIPTION
 
@@ -91,6 +91,8 @@ if any module temporarily disabled is working again.
 =head2 L<Dancer::Plugin::Auth::Twitter>
 
 =head2 L<Dancer::Plugin::Browser>
+
+=head2 L<Dancer::Plugin::Cache>
 
 =head2 L<Dancer::Plugin::Database>
 
