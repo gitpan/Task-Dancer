@@ -58,6 +58,8 @@ my %features = (
         'Auth::Twitter' => { name => 'Authenticate with Twitter' },
         Browser       => { name => 'Browser detection'           },
         Cache         => { name => 'Plugin to cache response content' },
+        'Captcha::SecurityImage' => {name => 'Generate and verify GD::SecurityImage captchas',
+                                     default => 0 },
         Database      => { name => 'Database'                    },
         DataFu        => { name => 'Generate HTML tables/forms'  },
         DBIC          => { name => 'DBIx::Class interface'       },
@@ -77,7 +79,7 @@ my %features = (
         MPD           => { name => 'Easy connection to MPD'      },
         # ORMesque    => { name => 'Light ORM'                   }, => failing 1.103180
         'Params::Normalization' => { name => 'query param normalization' },
-        # ProxyPath     => { name => 'Provides user-perspective paths' },
+        ProxyPath     => { name => 'Provides user-perspective paths' },
         Redis         => { name => 'Redis database connections'  },
         REST          => { name => 'RESTful apps', min => '0.05' },
         # Scoped      => { name => 'parameter variables scoping' }, => failing 0.01
@@ -118,8 +120,10 @@ foreach my $type ( keys %features ) {
         my ( $name, $default, $min ) =
             @{ $features{$type}{$semi_namespace} }{qw/ name default min /};
 
-        $default ||= 1; # install by default unless otherwise specified
-        $min     ||= 0; # no minimum version by default
+        # install by default unless otherwise specified
+        $default = defined($default) ? 0 : 1;
+        # no minimum version by default
+        $min ||= 0;
 
         feature "$name $type support",
             -default => $default, $full_namespace => $min;

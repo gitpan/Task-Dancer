@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.25';
+our $VERSION = '0.26';
 
 1;
 
@@ -12,7 +12,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.25
+Version 0.26
 
 =head1 DESCRIPTION
 
@@ -94,6 +94,8 @@ if any module temporarily disabled is working again.
 
 =head2 L<Dancer::Plugin::Cache>
 
+=head2 L<Dancer::Plugin::Captcha::SecurityImage>
+
 =head2 L<Dancer::Plugin::Database>
 
 =head2 L<Dancer::Plugin::DBIC>
@@ -130,7 +132,7 @@ if any module temporarily disabled is working again.
 
 =head2 L<Dancer::Plugin::Params::Normalization>
 
-=head2 L<Dancer::Plugin::ProxyPath> (temporarily disabled)
+=head2 L<Dancer::Plugin::ProxyPath>
 
 =head2 L<Dancer::Plugin::Redis>
 

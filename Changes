@@ -1,7 +1,12 @@
 Revision history for Task-Dancer
 
+0.26    29.03.11
+        * Fixed Makefile.PL and behavior with default modules
+        * Adding Dancer::Plugin::Captcha::SecurityImage
+        * Uncommenting Dancer::Plugin::ProxyPath (working with latest Dancer)
+
 0.25    20.03.11
-        * Adding Dancer::Plug::Cache
+        * Adding Dancer::Plugin::Cache
 
 0.24    11.03.11
         * Adding Dancer::Logger::Log4perl
