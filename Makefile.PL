@@ -87,6 +87,7 @@ my %features = (
                              min  => '0.03'                        },
         Mongo           => { name => 'MongoDB'                     },
         MPD             => { name => 'Easy connection to MPD'      },
+        NYTProf         => { name => 'Devel::NYTProf profiling'    },
         # ORMesque      => { name => 'Light ORM'                   }, => failing 1.103180
         'Params::Normalization' => { name => 'query param normalization' },
         Progress        => { name => 'display a progress bar during long-running requests' },
@@ -101,6 +102,7 @@ my %features = (
         SMS             => { name => 'Easy SMS sending'            },
         SporeDefinitionControl => { name => 'Validite route from a Spore' },
         TimeRequests    => { name => 'Log how long each request took to process' },
+        Thumbnail       => { name => 'Easy thumbnail creation'      },
         # Validation    => { name => 'Oogly Data validation'       }, => not available on CPAN?
         ValidationClass => { name => 'Centralized Input Validation' },
         WebSocket       => { name => 'Easily create WebSocket apps' },
