@@ -73,7 +73,9 @@ my %features = (
         DataFu          => { name => 'Generate HTML tables/forms'  },
         DBIC            => { name => 'DBIx::Class interface'       },
         DebugDump       => { name => 'dump objects to debug log'   },
+        DebugToolbar    => { name => 'debugging toolbar'           },
         Email           => { name => 'Email::Stuff integration'    },
+        EscapeHTML      => { name => 'Escape HTML entities to avoid XSS vulnerabilities' },
         Facebook        => { name => 'Plugin linking Dancer with Facebook::Graph' },
         'Fake::Response' => { name => 'Fake request for inremental implementations' },
         Feed            => { name => 'Generate feed rss or atom'   },
@@ -88,7 +90,7 @@ my %features = (
         Mongo           => { name => 'MongoDB'                     },
         MPD             => { name => 'Easy connection to MPD'      },
         NYTProf         => { name => 'Devel::NYTProf profiling'    },
-        # ORMesque      => { name => 'Light ORM'                   }, => failing 1.103180
+        ORMesque      => { name => 'Light ORM', min => '1.112180'  },
         'Params::Normalization' => { name => 'query param normalization' },
         Progress        => { name => 'display a progress bar during long-running requests' },
         ProxyPath       => { name => 'Provides user-perspective paths' },
@@ -103,7 +105,6 @@ my %features = (
         SporeDefinitionControl => { name => 'Validite route from a Spore' },
         TimeRequests    => { name => 'Log how long each request took to process' },
         Thumbnail       => { name => 'Easy thumbnail creation'      },
-        # Validation    => { name => 'Oogly Data validation'       }, => not available on CPAN?
         ValidationClass => { name => 'Centralized Input Validation' },
         WebSocket       => { name => 'Easily create WebSocket apps' },
         'XML::RSS'      => { name => 'XML::RSS to parse or create RSS feeds' },
