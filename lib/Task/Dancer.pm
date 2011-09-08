@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.31';
+our $VERSION = '0.32';
 
 1;
 
@@ -12,7 +12,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.31
+Version 0.32
 
 =head1 DESCRIPTION
 
@@ -134,9 +134,13 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Plugin::DebugToolbar>
 
+=item L<Dancer::Plugin::DirectoryView>
+
+=item L<Dancer::Plugin::ElasticSearch>
+
 =item L<Dancer::Plugin::Email>
 
-=item l<Dancer::Plugin::EscapeHTML>
+=item L<Dancer::Plugin::EscapeHTML>
 
 =item L<Dancer::Plugin::Facebook>
 
@@ -151,6 +155,8 @@ if any module temporarily disabled is working again.
 =item L<Dancer::Plugin::FormattedOutput>
 
 =item L<Dancer::Plugin::FormValidator>
+
+=item L<Dancer::Plugin::LibraryThing>
 
 =item L<Dancer::Plugin::Memcached>
 
@@ -186,6 +192,8 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Plugin::SporeDefinitionControl>
 
+=item L<Dancer::Plugin::Stomp>
+
 =item L<Dancer::Plugin::TimeRequest>
 
 =item L<Dancer::Plugin::Thumbnail>
@@ -198,7 +206,7 @@ if any module temporarily disabled is working again.
 
 =head1 More Plack middlewares
 
-=item L<Dancer::Middleware::Reabase>
+=item L<Dancer::Middleware::Rebase>
 
 =item L<Dancer::Debug>
 
