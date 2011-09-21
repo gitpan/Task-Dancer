@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 1;
 
@@ -12,7 +12,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.32
+Version 0.33
 
 =head1 DESCRIPTION
 
@@ -33,8 +33,6 @@ if any module temporarily disabled is working again.
 =over 4
 
 =item L<Dancer::Template::Alloy>
-
-=item L<Dancer::Template::Ctpp2>
 
 =item L<Dancer::Template::HAML>
 
@@ -139,6 +137,8 @@ if any module temporarily disabled is working again.
 =item L<Dancer::Plugin::ElasticSearch>
 
 =item L<Dancer::Plugin::Email>
+
+=item L<Dancer::Plugin::EncodeID>
 
 =item L<Dancer::Plugin::EscapeHTML>
 
