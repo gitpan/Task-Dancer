@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.34';
+our $VERSION = '0.35';
 
 1;
 
@@ -12,7 +12,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.34
+Version 0.35
 
 =head1 DESCRIPTION
 
@@ -74,7 +74,7 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Logger::Pipe>
 
-=item L<Dancer::Logger::PSGI>
+=item L<Dancer::Logger::PSGI> (temporarily disabled)
 
 =item L<Dancer::Logger::Syslog>
 
@@ -92,7 +92,7 @@ if any module temporarily disabled is working again.
 
 =over 4
 
-=item L<Dancer::Session::CHI> # disabled
+=item L<Dancer::Session::CHI>
 
 =item L<Dancer::Session::Cookie>
 
@@ -113,6 +113,10 @@ if any module temporarily disabled is working again.
 =over 4
 
 =item L<Dancer::Plugin::Async>
+
+=item L<Dancer::Plugin::Auth::Basic>
+
+=item L<Dancer::Plugin::Auth::Htpasswd>
 
 =item L<Dancer::Plugin::Auth::RBAC>
 
@@ -176,11 +180,13 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Plugin::MPD>
 
+=item L<Dancer::Plugin::Nitesi>
+
 =item L<Dancer::Plugin::NYTProf>
 
 =item L<Dancer::Plugin::ORMesque>
 
-=item L<Dancer::Plugin::Params::Normalization>
+=item L<Dancer::Plugin::Params::Normalization> (temporarily disabled)
 
 =item L<Dancer::Plugin::Passphrase>
 
