@@ -1,15 +1,22 @@
+Revision history for Task-Dancer
 
-0.35    16.11.11
+0.36    06.02.12
+        * Fixing Dancer::Plugin::Haml spelling (Brian Hann - c0bra).
+
+0.35    13.11.11
         * Adding Dancer::Plugin::Auth::Basic
         * Adding Dancer::Plugin::Auth::Htpasswd
         * Adding Dancer::Plugin::Nitesi
         * Enabling Dancer::Session::CHI
-        * Disabling Dancer::Plugin::Params::Normalization
-        * Disabling Dancer::Logger::PSGI
         * Removing Dancer::Plugin::DataFu
         * Forcing a specific version for Dancer::Plugin::NYTProf
         * Check Perl versions before installing
           (for now, useful to skip Mojolicious)
+
+Failing:
+ - Dancer::Plugin::ValidateTiny  (perl version, kalgan)
+ - Dancer::Plugin::Params::Normalization (undef obj call method, dams)
+ - Dancer::Logger::PSGI (tests, franck)
 
 0.34    05.11.11
         * Adding Dancer::Plugin::Preprocess::Sass

@@ -1,6 +1,6 @@
 package Task::Dancer;
 
-our $VERSION = '0.35';
+our $VERSION = '0.36';
 
 1;
 
@@ -34,7 +34,7 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Template::Alloy>
 
-=item L<Dancer::Template::HAML>
+=item L<Dancer::Template::Haml>
 
 =item L<Dancer::Template::HtmlTemplate>
 
@@ -74,7 +74,7 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Logger::Pipe>
 
-=item L<Dancer::Logger::PSGI> (temporarily disabled)
+=item L<Dancer::Logger::PSGI>
 
 =item L<Dancer::Logger::Syslog>
 
@@ -186,7 +186,7 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Plugin::ORMesque>
 
-=item L<Dancer::Plugin::Params::Normalization> (temporarily disabled)
+=item L<Dancer::Plugin::Params::Normalization>
 
 =item L<Dancer::Plugin::Passphrase>
 
