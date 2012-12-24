@@ -1,6 +1,7 @@
 package Task::Dancer;
-
-our $VERSION = '0.37';
+use strict;
+use warnings;
+our $VERSION = '0.38';
 
 1;
 
@@ -12,7 +13,7 @@ Task::Dancer - Dancer in a box
 
 =head1 VERSION
 
-Version 0.35
+Version 0.38
 
 =head1 DESCRIPTION
 
@@ -224,7 +225,11 @@ if any module temporarily disabled is working again.
 
 =item L<Dancer::Plugin::XML::RSS>
 
+=back
+
 =head1 More Plack middlewares
+
+=over 4
 
 =item L<Dancer::Middleware::Rebase>
 
@@ -234,9 +239,9 @@ if any module temporarily disabled is working again.
 
 =head1 AUTHOR
 
-Sawyer X, C<< <xsawyerx at cpan.org> >>
+Sawyer X, C<xsawyerx AT cpan DOT org>
 
-Alberto Simoes, C<< <ambs at cpan.org> >>
+Alberto Simoes, C<ambs AT cpan DOT org>
 
 =head1 BUGS
 
@@ -280,7 +285,7 @@ L<Dancer> team.
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2010-2011 Sawyer X.
+Copyright 2010-2012 Sawyer X.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
